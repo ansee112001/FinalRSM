@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<title>home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="https://www.facebook.com" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="https://accounts.snapchat.com/" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="https://www.pinterest.com" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="https://twitter.com" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  
+   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="home.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Information <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="about.html" class="w3-bar-item w3-button">About</a>
+      <a href="ContactUs.php" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+  <a href="shoping.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Shopping</a>
+  <a href="galery.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Gallery</a>
+  <a href="https://www.google.com/" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+</div>
+  
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="img/img.gif" alt="Social Media" width="1700" height="50">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Welcome to</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>SOCIAL MEDIA AR</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- class post -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Post Sosmed -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Recent Posts</h3>
+          <h5>alisya_akila <span class="w3-opacity">January 23, 2021 5 AM</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/6.jpg" alt="Alam" style="width:80%" class="w3-padding-16">
+          <p>Menikmati indahnya alam <strong>ciptaan Tuhan</strong>. Bagi kamu yang ingin melepas penat setelah bekerja atau sekedar foto-foto wajib mampir kesini ya!</p>
+		  <p class="w3-opacity">Labuan bajo, Nusa Tenggara Timur, Indonesia</p>
+		  <p><a href="infolokasi.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>Selengkapnya</b></a></p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Comment</b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/do3.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>George <span class="w3-opacity w3-medium">January 24, 2021, 6:32 PM</span></h4>
+                <p> Such a beautiful sight, makes you so beautiful</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Previous Post</h3>
+          <h5>marsya_nurul, <span class="w3-opacity">December 23, 2020, 08:20 PM</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="img/do9.jpg" alt="Men in Hats" style="width:80%" class="w3-padding-16">
+          <p>Try again first. even though you will definitely fall,try to keep getting up, fall, get up again and make the lesson your faith experience.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Comment </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="img/do10.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">December 23, 2020, 8:52 PM</span></h4>
+                <p>Thank you for the motivational words that can always keep me from giving up with my life</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="img/do4.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">December 23, 2020, 10:12 PM</span></h4>
+                <p> i like it!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END post -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="img/my.jpeg" alt="Jane" style="width:10%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>My Name</h4>
+          <p>I want to share something about the technology world with you and of course this will be very interesting!</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Popular Posts</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+		<li class="w3-padding-16">
+            <img src="img/17.jpg" alt="Image" class="w3-left w3-margin-right" style="width:60px">
+            <span class="w3-large">Make Up</span>
+            <br>
+            <span>Beautify yourself</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/4.jpg" alt="Image" class="w3-left w3-margin-right" style="width:60px">
+            <span class="w3-large">Accessories</span>
+            <br>
+            <span>The latest trend in women's accessories that can be <br> your fashion statement</span>
+          </li>
+		  <li class="w3-padding-16">
+            <img src="img/19.jpg" alt="Image" class="w3-left w3-margin-right" style="width:60px">
+            <span class="w3-large">Pants</span>
+            <br>
+            <span>Maybe this pants trend can be your choice</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/10.jpg" alt="Image" class="w3-left w3-margin-right" style="width:60px">
+            <span class="w3-large">Sweaters</span>
+            <br>
+            <span>Interested? This sweater can be used for boys and girls, you know! guaranteed price according to your pocket deh</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="img/7.jpg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:60px">
+            <span class="w3-large">Fashion</span>
+            <br>
+            <span>This fashion trend is predicted to hit in 2021</span>
+          </li>
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-cyan">
+          <h4>Camera</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <div class="w3-container w3-display-container w3-light-grey w3-section" style="height:200px">
+            <span class="w3-display-middle">Take your photo</span>
+			<p class="w3-right"><a href="camera.html"><button class="w3-button w3-gray"><b>Start</b></a></button></p>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Make Up</span> 
+			<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Pants</span>
+			<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fashion</span>
+			<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Accessories</span>
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow </h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <a href="https://www.facebook.com"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+          <a href="https://www.instagram.com"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+          <a href="https://accounts.snapchat.com/"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+          <a href="https://www.pinterest.com"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+          <a href="https://twitter.com"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+          <a href="https://www.linkedin.com"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+        </div>
+      </div>
+      <hr>
+
+    </div>
+  </div>
+</div>
+
+<!-- END content -->
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join us to receive updates about the latest posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p align="center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">SocialMedia.AR</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

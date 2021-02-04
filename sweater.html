@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Detail Pemesanan Sweater</title>
+<!--My Link-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {font-family:"Times New Roman", serif}
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+
+h5{
+	color: red;
+}
+</style>
+<body>
+<!-- Ambon Hotel -->
+  <div class="w3-cyan" id="ambon">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center"> SWEATER</h2>
+      <p class="w3-opacity w3-center"><i>Lihat detail pemesanan!</i></p>
+	  <p class="w3-wide w3-center"><a href="index.html"><button class="w3-button w3-dark-grey w3-section"><i class="fa fa-angle-double-left">Coba Dulu! Kalau Cocok Baru Beli!!</i></button></a></p>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="img/16.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p align="center"><b>Sweater Cowo Terbaru</b></p>
+            <p align="center" class="w3-opacity">Jln. Manunggal 22, Makassar</p>
+			<p align="center">Dapatkan harga terbaik</p>
+            <p align="center"><s>Rp. 100.000</s></p>
+			<h5 align="center">Rp. 70.000</h5>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('pemesanan').style.display='block'">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="img/11.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p align="center"><b>Sweater Wanita</b></p>
+            <p align="center" class="w3-opacity">Jln. Manunggal 22, Makassar</p>
+			<p align="center">Hanya untuk hari ini</p>
+            <p align="center"><s>Rp.200.000</s></p>
+			<h5 align="center">Rp. 150.500</h5>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('pemesanan').style.display='block'">Pesan Sekarang</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="img/10.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p align="center"><b>Sweater Couple </b></p>
+            <p align="center" class="w3-opacity">Jln. Manunggal 22, Makassar</p>
+			<p align="center">Harga terjangkau</p>
+            <p align="center"><s>Rp. 190.000</s></p>
+			<h5 align="center">Rp. 140.800</h5>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('pemesanan').style.display='block'">Pesan Sekarang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <!-- Pemesanan -->
+  <div id="pemesanan" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-cyan w3-center w3-padding-32"> 
+        <h2 class="w3-wide">Pemesanan  <i class="fa fa-envelope-square w3-margin-right"></i></h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-male"></i>  Nama</label></p>
+			<input class="w3-input w3-border" type="text" placeholder="Nama anda..">
+		<p><label for="date"><i class="fa fa-calendar"></i> Tanggal</label></p>
+           <input class="w3-input w3-border" type="date" id="date" placeholder="Masukan tanggal" name="date">
+		   <p><label for="city"><i class="fa fa-building"></i> Kota</label></p>
+			<select class="form-control" id="city" name="city">
+				  <option value="pilih">-- Pilih Kotamu --</option> 
+                  <option value="ambon">Ambon</option>
+				  <option value="bandung">Bandung</option>
+				  <option value="balikpapan">Balikpapan</option>
+				  <option value="bekasi">Bekasi</option>
+				  <option value="bogor">Bogor</option>
+				  <option value="cimahi">Cimahi</option>
+				  <option value="cirebon">Cirebon</option>
+				  <option value="depok">Depok</option>
+				  <option value="jayapura">Jayapura</option>
+				  <option value="kediri">Kediri</option>
+				  <option value="makassar">Makassar</option>
+				  <option value="malang">Malang</option>
+				  <option value="manado">Manado</option>
+				  <option value="palu">Palu</option>
+				  <option value="palembang">Palembang</option>
+				  <option value="parepare">Parepare</option>
+				  <option value="pekalongan">Pekalongan</option>
+				  <option value="pontianak">Pontianak</option>
+				  <option value="Salatiga">Salatiga</option>
+				   <option value="samarinda">Samarinda</option>
+				  <option value="semarang">Semarang</option>
+				  <option value="Surabaya">Surabaya</option>
+				   <option value="tebingtinggi">Tebingtinggi</option>
+				  <option value="tual">Tual</option>
+				  <option value="yogyakarta">Yogyakarta</option>
+                  <option value='lainnya'>Lainnya</option>
+                </select>
+        <p><label for="alamat"><i class="fa fa-home"></i> Alamat</label></p>
+        <input class="w3-input w3-border" type="alamat" id="alamat" placeholder="Masukan alamat anda.." name="alamat">
+        <p><label for="email"><i class="fa fa-user"></i> Kirim ke</label></p>
+			<input class="w3-input w3-border" type="text" id="email" placeholder="Masukan email" name="email">
+		<p><label for="metode"><i class="fa fa-usd"></i> Metode Pembayaran</label></p>
+			<div class="col-sm-10">
+                <label class="radio-inline"><input type="radio" id="metode" name="metode" value="transfer bank">Transfer Bank  <i class="fa fa-fax"></i></label>
+                <label class="radio-inline"><input type="radio" id="metode" name="metode" value="kartu kredit">Kartu Kredit / Debit Online  <i class="fa fa-credit-card"></i></label>
+				<label class="radio-inline"><input type="radio" id="metode" name="metode" value="indomaret/i.saku">Indomaret / i.Saku  <i class="fa fa-qrcode"></i></label>
+            </div>
+			<br></br>
+        <button class="w3-button w3-block w3-cyan w3-padding-16 w3-section w3-right" onclick="myfunction()">Konfirmasi Pemesanan <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('pemesanan').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+  
+  
+<script type="text/javascript">
+ //Konfirmasi Tiket
+function myfunction()
+{
+alert("Data berhasil diinput dan terima kasih telah berbelanja bersama kami")
+}
+</script>
+  
+  </body>
+</html>
